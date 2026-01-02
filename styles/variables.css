@@ -1,4 +1,38 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --background-url: url("../images/cover-image-dark.png");
+
+  --container-padding-x: 20px;
+  --container-max-width: 984px;
+
+  --section-padding-y: 40px;
+  --section-padding-y-small: 20px;
+
+  --color-blue-dark: #000028;
+  --color-red: #ff0070;
+  --color-purple: #db00ff;
+  --color-pink: #ffc2e6;
+  --color-pink-dark: #ff8dcb;
+  --color-gray: #353430;
+
+  --color-accent: var(--color-red);
+  --color-main-text: var(--color-pink);
+  --color-hover-menu: rgba(255, 0, 112, 0.4);
+  --color-background: var(--color-blue-dark);
+  --color-header-title: var(--color-purple);
+  --color-decor-bg: var(--color-accent);
+  --color-decor-text: var(--color-blue-dark);
+  --color-header-description: var(--color-blue-dark);
+  --color-text-shadow: var(--color-red);
+
+  --outline: 1px solid currentColor;
+
+  --grid-column-small: clamp(235px, calc((100% - 20px) * 0.3266), 315px);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --section-padding-y: 25px;
+    --section-padding-y-small: 10px;
+    --container-padding-x: 10px;
+  }
+}
