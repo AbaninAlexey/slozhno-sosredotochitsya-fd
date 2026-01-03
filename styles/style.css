@@ -229,7 +229,7 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .concentration__title {
     inline-size: clamp(236px, calc(30.86vw - 1.8px), 315px);
   }
