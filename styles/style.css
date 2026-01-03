@@ -96,7 +96,7 @@
   justify-self: center;
 }
 
-@media (width < 768px) {
+@media (width <= 768px) {
   .header__theme-menu-list {
     flex-direction: column;
   }
@@ -235,7 +235,7 @@
   }
 }
 
-@media (width < 768px) {
+@media (width <= 768px) {
   .concentration__list {
     grid-template-columns: 1fr;
   }
