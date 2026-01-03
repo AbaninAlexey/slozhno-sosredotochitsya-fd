@@ -1,6 +1,4 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-@import "./variables.css";
-
 *,
 *::before,
 *::after {
@@ -46,15 +44,15 @@ h3 {
 
 h1,
 .h1 {
-  font-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--color-header-title);
   font-weight: 700;
 }
 
-@media (width <= 375px) {
+@media (width > 375px) {
   h1,
   .h1 {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 

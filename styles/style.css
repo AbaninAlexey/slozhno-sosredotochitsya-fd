@@ -16,7 +16,7 @@
   grid-template-rows: min-content auto 185px;
 }
 
-@media (min-width: 768px) {
+@media (width > 768px) {
   .header {
     padding-block: 20px;
   }
@@ -44,30 +44,10 @@
   }
 }
 
-/* .mark--circle {
-  &::after {
-    content: "";
-    display: inline-flex;
-    border-radius: 50%;
-    inline-size: 9px;
-    block-size: 9px;
-    background-color: var(--color-mark-bg);
-    box-shadow: 0 0 4px 2px var(--color-mark-bg);
-    margin: 8px;
-  }
-} */
-
-@media (max-width: 768px) {
+@media (width < 768px) {
   .mark {
-    bottom: 10px;
-    left: 10px;
-  }
-
-  .mark--top {
     right: 10px;
     top: 10px;
-    bottom: auto;
-    left: auto;
   }
 }
 
@@ -116,7 +96,7 @@
   justify-self: center;
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .header__theme-menu-list {
     flex-direction: column;
   }
@@ -153,7 +133,7 @@
   }
 }
 
-@media (width <= 376px) {
+@media (width < 768px) {
   .header {
     grid-template-rows: min-content auto 173px;
     padding-block: 10px;
@@ -188,18 +168,13 @@
   gap: 20px;
 }
 
-@media (min-width: 768px) {
+@media (width > 768px) {
   .attention {
     padding-block-start: 60px;
     grid-template-columns:
       var(--grid-column-small)
       1fr;
   }
-
-  /* .attention__card {
-    grid-column: span 2;
-    grid-row: span 2;
-  } */
 }
 
 .card {
@@ -254,13 +229,13 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media (min-width: 767px) {
+@media (width > 768px) {
   .concentration__title {
     inline-size: clamp(236px, calc(30.86vw - 1.8px), 315px);
   }
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .concentration__list {
     grid-template-columns: 1fr;
   }
@@ -284,7 +259,7 @@
   height: 100%;
 }
 
-@media (min-width: 767px) {
+@media (width > 768px) {
   .gallery {
     gap: 20px;
     padding-block-end: 60px;
@@ -309,7 +284,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (width < 768px) {
   .gallery {
     grid-template-columns: 1fr;
   }
@@ -328,7 +303,7 @@
   gap: 20px;
 }
 
-@media (min-width: 768px) {
+@media (width > 768px) {
   .advice {
     grid-template-columns:
       var(--grid-column-small)

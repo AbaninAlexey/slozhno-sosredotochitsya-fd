@@ -45,6 +45,20 @@
   }
 }
 
+@media (width < 768px) {
+  .camera-border {
+    &::before {
+      top: 10px;
+      right: 10px;
+    }
+
+    &::after {
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+}
+
 .block-size {
   min-block-size: 768px;
   height: 100vh;

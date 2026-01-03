@@ -10,6 +10,7 @@
   --color-blue-dark: #000028;
   --color-red: #ff0070;
   --color-purple: #db00ff;
+  --color-pink-light: #fff1f7;
   --color-pink: #ffc2e6;
   --color-pink-dark: #ff8dcb;
   --color-gray: #353430;
@@ -29,7 +30,7 @@
   --grid-column-small: clamp(235px, calc((100% - 20px) * 0.3266), 315px);
 }
 
-@media (max-width: 767px) {
+@media (width < 768px) {
   :root {
     --section-padding-y: 25px;
     --section-padding-y-small: 10px;
