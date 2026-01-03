@@ -7,6 +7,12 @@
 
 a,
 button {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: transparent;
+  border: none;
   &:focus-visible {
     outline: none;
   }
@@ -71,14 +77,4 @@ ul {
 picture {
   margin: 0;
   padding: 0;
-}
-
-button,
-a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  background-color: transparent;
-  border: none;
 }
