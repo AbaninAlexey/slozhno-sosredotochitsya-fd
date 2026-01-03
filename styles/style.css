@@ -168,7 +168,7 @@
   gap: 20px;
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .attention {
     padding-block-start: 60px;
     grid-template-columns:
@@ -235,7 +235,7 @@
   }
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .concentration__list {
     grid-template-columns: 1fr;
   }
@@ -259,7 +259,7 @@
   height: 100%;
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .gallery {
     gap: 20px;
     padding-block-end: 60px;
@@ -303,7 +303,7 @@
   gap: 20px;
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .advice {
     grid-template-columns:
       var(--grid-column-small)
