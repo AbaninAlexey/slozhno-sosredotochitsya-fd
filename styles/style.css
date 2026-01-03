@@ -235,7 +235,7 @@
   }
 }
 
-@media (width < 768px) {
+@media (width <= 768px) {
   .concentration__list {
     grid-template-columns: 1fr;
   }
