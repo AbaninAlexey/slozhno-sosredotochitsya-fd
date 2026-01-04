@@ -63,3 +63,14 @@
   min-block-size: 768px;
   height: 100vh;
 }
+
+@media (width <= 768px) {
+  .block-size {
+    min-block-size: clamp(
+      668px,
+      calc(668px + (100vw - 375px) * 0.9066),
+      1024px
+    );
+  }
+}
+

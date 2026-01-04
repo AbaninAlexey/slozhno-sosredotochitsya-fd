@@ -43,27 +43,27 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 700;
   line-height: 130%;
 }
 
-h1,
-.h1 {
+h1, .large-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--color-header-title);
   font-weight: 700;
 }
 
 @media (width > 375px) {
-  h1,
-  .h1 {
+  h1, .large-title  {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 h2,
 h3,
+h4,
 p {
   font-size: 18px;
 }
